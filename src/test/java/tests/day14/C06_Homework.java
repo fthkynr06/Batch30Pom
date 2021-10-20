@@ -18,7 +18,7 @@ public class C06_Homework extends TestBase {
     public void test(){
         driver.get(ConfigReader.getProperty("dhtmlUrl"));
         Actions actions=new Actions(driver);
-        HomeworkPage homeworkPage=new HomeworkPage(driver);
+        DhtmlPage homeworkPage=new DhtmlPage(driver);
         actions.dragAndDrop(homeworkPage.Copenhagenbtn,homeworkPage.denmarkBox);
         actions.dragAndDrop(homeworkPage.Washington,homeworkPage.usaBox);
         actions.dragAndDrop(homeworkPage.stockholmBtn,homeworkPage.swedenBox).perform();
